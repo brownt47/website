@@ -15,7 +15,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
 
   <!-- Favicons -->
@@ -53,10 +53,12 @@
 </head>
 
 <body>
-
+  <!-- #########################################################################
+#########################     Navbar      ######################
+############################################################################ -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top position-fixed bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <a class="navbar-brand" href="#">Timothy Brown</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,10 +68,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" aria-current="page" href="#">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" aria-current="page" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -80,10 +85,19 @@
     </div>
   </nav>
 
+  <!-- #########################################################################
+#########################     Body Of site      ######################
+############################################################################ -->
+
   <div class="container-fluid hero">
     <div class="col-8 offset-2" id="main">
+
+      <!-- #########################################################################
+    #########################     Hero      ######################
+    ############################################################################ -->
+
       <main class="container-fluid">
-          <div class="p-4 p-md-5 mb-4 text-white rounded bg-secondary" id="hero" style="margin-top: 84px;" >
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-secondary" id="hero" style="margin-top: 84px;">
           <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">Timothy Brown</h1>
             <p class="lead my-3">Mathematican. Humorist. Problem Solver.</p>
@@ -94,308 +108,253 @@
         <!-- #########################################################################
   #########################    Featured Cards Navbar      ######################
   ############################################################################ -->
+        <div class="card-deck">
 
-        <div class="row mb-2">
-          <div class="col-md-6">
 
-            <div class="card h-100">
-              <div class="row card-body">
-                <div class="col-8">
-                  <strong class="d-inline-block mb-2 text-secondary">Machine Learning</strong>
-                  <h3 class="card-title">Google Stock Forecasting</h3>
-                  <p class="card-text">See how well the Long Short-Term Model did predicting Google's stock prices for a month.</p>
+          <div class="row mb-2">
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
 
-                </div>
-                <div class="col-4 img-fluid">
-                  <img class="card-img-top" src="images\Google_Stock_Predictions.png" height="100%" width="100%" alt="">
-                </div>
-              </div>
+              <div class="card h-100">
                 <div class="row card-body">
-                    <a href="#" class=" btn btn-primary col-3 learn">Learn More</a>
-                </div>
-              <div class="card-footer">
-                <a href="#" class=" btn btn-primary ">Learn More</a>
-              </div>
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Machine Learning</strong>
+                    <h3 class="card-title">Google Stock Forecasting</h3>
+                    <p class="card-text">Long Short-Term Model predicting one month of Google stock prices.</p>
 
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="row card-body">
-                <div class="col-8">
-                  <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
-                  <h3 class="card-title">Tableau Dashboards</h3>
-                  <p class="card-text">Various Tableau dashboards from student enrollments to Super Bowls</p>
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block" src="images\Google_Stock_Predictions.png" height="100%" width="100%" alt="">
+                  </div>
                 </div>
-                <div class="col-4 img-fluid">
-                  <img class="card-img-top" src="images\Course_Enrollment_Analysis.jpg" height="100%" width="100%" alt="">
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
                 </div>
-              </div>
-              <div class="row card-body">
-                  <a href="#" class=" btn btn-primary col-3 learn">Learn More</a>
-              </div>
-            <div class="card-footer">
-                <a href="#" class=" btn btn-primary ">Learn More</a>
               </div>
             </div>
 
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+              <div class="card h-100">
+                <div class="row card-body">
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
+                    <h3 class="card-title">Tableau Dashboards</h3>
+                    <p class="card-text">Various Tableau dashboards from student course enrollments to Super Bowls.</p>
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block" src="images\SuperBowl_Dashboard.jpg" height="100%" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
 
-        </div>
+
+          <!-- #########################################################################
+  #########################    Second Row Cards Navbar      ######################
+  ############################################################################ -->
 
 
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Deep Learning</strong>
-            <h3 class="mb-0">Google Stock Forecasting</h3>
+          <div class="row mb-2">
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
 
-            <p class="card-text mb-auto">See how well the Long Short-Term Model did predicting Google's stock prices for a month.</p>
-            <a href="#" class="stretched-link">Learn more...</a>
+              <div class="card h-100">
+                <div class="row card-body">
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Natural Language Processing</strong>
+                    <h3 class="card-title">Parler Text Generator</h3>
+                    <p class="card-text">Generate posts from the leaked Parler dataset using Markovify library.</p>
+
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block d-none d-md-block" src="images\_116404399_parler-app-plain.jpg" height="100%" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+              <div class="card h-100">
+                <div class="row card-body">
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Natural Language Processing</strong>
+                    <h3 class="card-title">Fake News Classification</h3>
+                    <p class="card-text">Fake News Classifier using Google’s BERT model.</p>
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block d-none d-md-block" src="images\Peeling_sky.jpg" height="100%" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-auto d-none d-lg-block">
 
-            <img width="200" height="250" src="images\Google_Stock_Predictions.png" alt="">
+          <!-- #########################################################################
+#########################    Third Row Cards Navbar      ######################
+############################################################################ -->
+          <div class="row mb-2">
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+
+              <div class="card h-100">
+                <div class="row card-body">
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
+                    <h3 class="card-title">Photoshop Projects </h3>
+                    <p class="card-text">A collection of art, contest entries, and other fun with Photoshop.</p>
+
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block" src="images\destroyer_of_worlds_400.jpg" height="100%" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+              <div class="card h-100">
+                <div class="row card-body">
+                  <div class="col-8">
+                    <strong class="d-inline-block mb-2 text-success">Research & Knowledge </strong>
+                    <h3 class="card-title">Book Reviews</h3>
+                    <p class="card-text">My reviews of books and research publications.</p>
+                  </div>
+                  <div class="col-4 img-fluid">
+                    <img class="card-img-top d-none d-md-block" src="images\power_laws_book.jpg" height="100%" width="100%" alt="">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class=" btn btn-primary ">Learn More</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
-          <h3 class="mb-0">Tableau Dashboards</h3>
 
-          <p class="mb-auto">Various Tableau dashboards from student enrollments to Super Bowls.</p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\Course_Enrollment_Analysis.jpg" alt="">
+        <!-- #########################################################################
+#########################    Other Section     ######################
+############################################################################ -->
 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-secondary">Natural Language Processing</strong>
-          <h3 class="mb-0">Parler Text Generator</h3>
-
-          <p class="card-text mb-auto h-100">Generate posts from the leaked Parler dataset using Markovify library</p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\_116404399_parler-app-plain.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-secondary">Natural Language Processing</strong>
-          <h3 class="mb-0">Fake News Classification</h3>
-
-          <p class="card-text mb-auto h-100">Fake News Classifier using Google’s BERT model.
-          </p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\Peeling_sky.jpg" alt="">
-
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-secondary">Natural Language Processing</strong>
-          <h3 class="mb-0">Fake News Classification</h3>
-
-          <p class="card-text mb-auto h-100">Fake News Classifier using Google’s BERT model.
-            lipdiohfsoudh fniowoiejgjfi jfifi ifiif jlkaenfln nqeoiqf;o joje
-          </p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\Peeling_sky.jpg" alt="">
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
-          <h3 class="mb-0">Photoshop Projects </h3>
-
-          <p class="mb-auto">A collection of art, contest entries, and other fun with Photoshop.</p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\destroyer_of_worlds_400.jpg" alt="">
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Vizualization</strong>
-          <h3 class="mb-0">NFL Super Bowl Dashboard </h3>
-
-          <p class="card-text h-100 mb-auto">A Tableau dashboard about past NFL Super Bowls up to 2019.</p>
-          <a href="#" class="stretched-link">Learn more...</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img width="200" height="250" src="images\SuperBowl_Dashboard.jpg" alt="">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="row g-5">
-    <div class="col-md-8">
-      <h3 class="pb-4 mb-4 fst-italic border-bottom">Other Projects</h3>
-
-
-      <article class="blog-post">
-        <h2 class="blog-post-title">Python Projects</h2>
-
-        <p>
-
-
-          Collection of python projects used to analyze course enrollment data and generate excel reports.
-          Makes use of pandas, numpy, xlsxwriter, and others.
-        </p>
-        <hr>
-
-        <article class="blog-post">
-          <h2 class="blog-post-title">R Projects</h2>
-
-          <p>
-
-
-            Collection of python projects used to analyze course enrollment data and generate excel reports.
-            Makes use of pandas, numpy, xlsxwriter, and others.
-          </p>
-          <hr>
-
-          <article class="blog-post">
-            <h2 class="blog-post-title">VBA Projects</h2>
-
-            <p>
-
-
-              Collection of python projects used to analyze course enrollment data and generate excel reports.
-              Makes use of pandas, numpy, xlsxwriter, and others.
-            </p>
-            <hr>
+        <br>
+        <div class="row g-5">
+          <div class="col-md-8">
+            <h3 class="pb-4 mb-4  fst-italic border-bottom">Other Projects</h3>
 
             <article class="blog-post">
-              <h2 class="blog-post-title">Scala and Spark Projects</h2>
-
+              <h2 class="blog-post-title">Python Projects</h2>
               <p>
-
-
                 Collection of python projects used to analyze course enrollment data and generate excel reports.
                 Makes use of pandas, numpy, xlsxwriter, and others.
               </p>
               <hr>
+            </article>
+            <article class="blog-post">
+              <h2 class="blog-post-title">R Projects</h2>
+              <p>
+                Projects using R programming language.
+              </p>
+              <hr>
+            </article>
+            <article class="blog-post">
+              <h2 class="blog-post-title">VBA Projects</h2>
+              <p>
+                VBA macro scripts for common tasks performed using Microsoft Word, Excel, and PowerPoint.
+              </p>
+              <hr>
+            </article>
+            <article class="blog-post">
+              <h2 class="blog-post-title">Scala and Spark Projects</h2>
+              <p>
+                Projects from a course dealing with Scala and Spark for distributed computing.
+              </p>
+              <hr>
+            </article>
+          </div>
 
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="fst-italic">About</h4>
+                <p class="mb-0">Creative professional with 20 years of teaching experience from math to stats to programming.</p>
+              </div>
 
+              <div class="p-4">
+                <h4 class="fst-italic">Book Reviews</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">Grit: Passion and Perserverance</a></li>
+                  <li><a href="#">Zen and the Art of Motorcycle Maintenance</a></li>
+                  <li><a href="#">Acres of Diamonds</a></li>
+                  <li><a href="#">Planiverse</a></li>
+                </ol>
+              </div>
 
+              <div class="p-4">
+                <h4 class="fst-italic">Recommended Reading</h4>
+                <ol class="list-unstyled">
+                  <li><a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">
+                      How to Read a Paper - S. Keshav (pdf)
+                    </a>
+                  </li>
+                  <li><a href="https://towardsdatascience.com/particle-swarm-optimization-visually-explained-46289eeb2e14" target="_blank">
+                      Particle Swarm Optimization - Visually Explained
+                    </a>
+                  </li>
+                  <li><a href="https://r4ds.had.co.nz/" target="_blank">
+                      <em>"R for Data Science"</em> - eBook by Hadley Wickham
+                    </a>
+                  </li>
+                </ol>
+              </div>
 
-              <nav class="blog-pagination" aria-label="Pagination">
-                <a class="btn btn-outline-primary" href="#">Older</a>
-                <a class="btn btn-outline-secondary disabled">Newer</a>
-              </nav>
+              <div class="p-4">
+                <h4 class="fst-italic">Social Media</h4>
+                <ol class="list-unstyled">
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">LinkedIn</a></li>
 
+                </ol>
+              </div>
+              <div class="p-4">
+                <h4 class="fst-italic">Courses and Certificates</h4>
+                <ol class="list-unstyled">
+                  <li><a href="#">Photoshop Essentials</a></li>
+                  <li><a href="#">Full Stack Web Development</a></li>
+
+                </ol>
+              </div>
+
+            </div>
+          </div>
+        </div>
     </div>
+    </main>
 
-    <div class="col-md-4">
-      <div class="position-sticky" style="top: 2rem;">
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Creative professional with 20 years of teaching experience from math to stats to programming.</p>
-        </div>
 
-        <div class="p-4">
-          <h4 class="fst-italic">Book Reviews</h4>
-          <ol class="list-unstyled mb-0">
-            <li><a href="#">Grit: Passion and Perserverance</a></li>
-            <li><a href="#">Zen and the Art of Motorcycle Maintenance</a></li>
-            <li><a href="#">Acres of Diamonds</a></li>
-            <li><a href="#">Planiverse</a></li>
-          </ol>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
 
-        <div class="p-4">
-          <h4 class="fst-italic">Recommended Reading</h4>
-          <ol class="list-unstyled">
-            <li><a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank">
-                How to Read a Paper - S. Keshav (pdf)
-              </a>
-            </li>
-            <li><a href="https://towardsdatascience.com/particle-swarm-optimization-visually-explained-46289eeb2e14" target="_blank">
-                Particle Swarm Optimization - Visually Explained
-              </a>
-            </li>
-            <li><a href="https://r4ds.had.co.nz/" target="_blank">
-                <em>"R for Data Science"</em> - eBook by Hadley Wickham
-              </a>
-            </li>
-          </ol>
-        </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">Social Media</h4>
-          <ol class="list-unstyled">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-
-          </ol>
-        </div>
-        <div class="p-4">
-          <h4 class="fst-italic">Courses and Certificates</h4>
-          <ol class="list-unstyled">
-            <li><a href="#">Photoshop Essentials</a></li>
-            <li><a href="#">Full Stack Web Development</a></li>
-
-          </ol>
-        </div>
-
+    <footer class="footer">
+      <div class="container text-center">
+        <span class="text-dark">Website designed by Timothy Brown 2022</span>
       </div>
-    </div>
-  </div>
-  </div>
-  </main>
+    </footer>
 
-  <footer class="blog-footer">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-  </script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
 </body>
+
+
 
 </html>
